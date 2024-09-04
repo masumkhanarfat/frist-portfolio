@@ -1,0 +1,282 @@
+
+*{
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  font-family: Poppins;
+}
+body{
+  background: #111;
+}
+
+
+/* Home page customize */
+section{
+  min-height: 100vh;
+}
+section:nth-child(even){
+  background: #242424;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin: 10px 4%;
+}
+header nav .logo{
+  font-size: 2em;
+  font-weight: bold;
+}
+header nav .logo span{
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFA800;
+}
+header nav .navPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .jump{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  color: #999;
+}
+header nav .jump span:first-child{
+  color: #999;
+  margin-right: 10px;
+}
+header nav .jump .line{
+  position: relative;
+  width: 100px;
+  height: 1px;
+  background: #999;
+  z-index: 999;
+}
+
+header nav .nav-iteams ul{
+  display: flex;
+}
+header nav .nav-iteams ul li{
+  margin-right: 80px;
+}
+header nav .nav-iteams ul li a{
+  font-size: 15px;
+  text-transform: lowercase;
+  font-weight: 200;
+}
+header nav .download-cv a{
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 15px;
+  color: #111;
+  background: #FFA800;
+}
+
+
+
+
+/* main content */
+.main{
+  display: grid;
+  grid-template-columns: 150px 1.5fr 1fr ;
+  grid-template-areas: 
+  'left middle right';
+  grid-gap: 10px;
+  margin: 150px 7%;
+}
+
+
+/* Left Sid Customize */
+.left{
+  display: flex;
+  flex-direction: column;
+  grid-area: 'left';
+}
+.left .introduce{
+  position: relative;
+}
+.left .introduce p{
+  display: inline;
+  font-size: 0.6em;
+  padding: 5px 15px;
+  border-radius: 1px;
+  background: #222222;
+}
+.left .introduce .name{
+  margin: 8px 0;
+}
+.left .introduce .name h1{
+  font-size: 3.1em;
+  display: block;
+}
+.left .introduce .name .sure{
+  display: flex;
+  align-items: center;
+}
+.left .introduce .name .sure .line{
+  position: relative;
+  width: 70%;
+  height: 2px;
+  margin-right: 10px;
+  background: #FFA800;
+}
+.left .introduce .name .sure h3{
+  font-size: 2em;
+}
+.left .contactMe{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #FFA800;
+  border-bottom-right-radius: 10px;
+}
+.left .contactMe a{
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+.left .social-media{
+  position: relative;
+  margin: 18px 0;
+}
+.left .social-media .sm-heading{
+  margin-bottom: 20px;
+}
+.left .social-media .sm-heading p{
+  display: inline;
+  font-size: 0.5em;
+  padding: 2px 13px;
+  border-bottom-right-radius: 5px;
+  background: #222222;
+}
+.left .social-media .sm-heading p span{
+  color: #FFA800;
+}
+.left .sm-box{
+  display: flex;
+  align-items: flex-end;
+}
+.sm-box .sm{
+  margin-right: 10px;
+}
+.sm-box .sm ul{
+  position: relative;
+}
+.sm-box .sm ul li .icon img{
+  width: 12px;
+  opacity: 0.3;
+}
+.sm-box .sm ul li .sm-text a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.6em;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.sm-box .sm:nth-child(3) ul li .sm-text a{
+  border: none;
+}
+.left .hello{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.left .hello h2 i{
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 350;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+/* Middle Point Customize */
+
+.middle{
+  grid-area: 'middle';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle .circle{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #FFA800;
+}
+.middle .circle .masum img{
+    width: 252px;
+}
+
+
+
+
+.right{
+  grid-area: 'right';
+  margin-top: 50px;
+}
+.right .right-main .right-heading{
+  margin-bottom: 20px;
+}
+.right .right-main .right-heading p{
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #FFA800;
+}
+.right .right-main .right-heading h2{
+  font-size: 2.2em;
+  margin: 0px 0 10px 0;
+}
+.right .right-main .right-heading .des{
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: normal;
+  text-align: left;
+  font-size: 1em;
+}
+.right .right-main .ability{
+  position: relative;
+  margin-bottom: 20px;
+}
+.right .right-main .ability ul{
+  display: flex;
+}
+.right .right-main .ability ul li{
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #fff;
+}
+.right .right-main .ability ul li:nth-child(3) {
+  border: none;
+}
+.right .right-main .ability ul li a{
+  font-size: 0.8em;
+  color: #FFA800;
+}
+.right .right-main .right-footer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  
+}
+.right .right-main .right-footer p{
+  font-size: 0.65em;
+  margin-left: -10px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  border-left: 2px solid #FFA800;
+}
+.right .right-main .right-footer p span{
+  color: #FFA800;
+}
